@@ -25,7 +25,7 @@ export default {
       <button class="ml-4 rounded bg-black px-6 text-white" @click="addTodo">Add</button>
     </div>
 
-    <!-- List of todos with done false -->
+    <!-- List of todos -->
     <ul class="mt-8">
       <li class="mt-4 flex items-center rounded bg-slate-200 p-4" v-for="(todo, index) in todos" :key="index">
         <input class="rounded border-0" type="checkbox" v-model="todo.done" />
