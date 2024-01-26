@@ -21,7 +21,7 @@ export default {
   <div class="container my-20 max-w-lg">
     <!-- Add new todo -->
     <div class="flex">
-      <input class="rounded" type="text" v-model="newTodo" placeholder="New todo" />
+      <input class="rounded" type="text" v-model="newTodo" placeholder="New todo" @keyup.enter="addTodo" />
       <button class="ml-4 rounded bg-black px-6 text-white" @click="addTodo">Add</button>
     </div>
 
